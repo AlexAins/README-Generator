@@ -43,31 +43,39 @@ const response = await inquirer
             name: "emailInput",
             message: "What is your email address?",
         },
-])
+]);
 
 let readmeTemplate =`
-#${response.titleInput}
+# ${response.titleInput}
 
-##Description
+## Description
+${response.descriptionInput}
 
+## Table of Content
 
-##Table of Content
+* [Installation](#installation)
+* [Usage](#usage)
+* [License](#license)
+* [Contributing](#contributing)
+* [Tests](#tests)
+* [Questions](#questions)
 
-
-##Installation
-
-
-##Usage
-
-
-##License
-
-
-##Contributing
+## Installation
 
 
-##Tests
+## Usage
 
 
-##Questions
-`
+## License
+
+
+## Contributing
+
+
+## Tests
+
+
+## Questions
+`;
+
+await fs.writeFile("README.md",readmeTemplate);
