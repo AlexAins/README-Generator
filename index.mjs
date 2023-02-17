@@ -124,8 +124,8 @@ ${response.testInput}
 
 ## Questions
 If you have any questions, Please contact me through:
-* [GitHub](https://github.com/${response.githubInput})
-* [Email](mailto:${response.emailInput})
+* GitHub: [${response.githubInput}](https://github.com/${response.githubInput})
+* Email: [${response.emailInput}](mailto:${response.emailInput})
 `;
 
 // Creating new README.me file using FS.
