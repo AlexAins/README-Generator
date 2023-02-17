@@ -52,7 +52,6 @@ let readmeTemplate =`
 ${response.descriptionInput}
 
 ## Table of Content
-
 * [Installation](#installation)
 * [Usage](#usage)
 * [License](#license)
@@ -61,19 +60,19 @@ ${response.descriptionInput}
 * [Questions](#questions)
 
 ## Installation
-
+${response.installationInput}
 
 ## Usage
-
+${response.usageInput}
 
 ## License
 
 
 ## Contributing
-
+${response.contributionInput}
 
 ## Tests
-
+${response.testInput}
 
 ## Questions
 If you have any questions, Please contact me through:
