@@ -49,39 +49,51 @@ const response = await inquirer
             type: "list",
             name: "licenseInput",
             message: "What license was used for your Project?",
-            choices: ["MIT", "GPLv2", "GPLv3","Apache","MPL 2.0", "Unlicense", "Other"]
+            choices: ["MIT", "GPLv2", "GPLv3","Apache","MPL 2.0", "Unlicense"]
         }
 ]);
 
 // Function to get badge for chosen license
 function gatherLicense(license){
     if(license === "MIT"){
-        return "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)";
+        let badge = "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)";
+        let link = "https://opensource.org/licenses/MIT";
+        return [badge, link];
     }
     else if(license === "GPLv2"){
-        return "[![License: GPL v2](https://img.shields.io/badge/License-GPL_v2-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)";
+        let badge = "[![License: GPL v2](https://img.shields.io/badge/License-GPL_v2-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)";
+        let link = "https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html";
+        return [badge, link];
     }
     else if(license === "GPLv3"){
-        return "[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)";
+        let badge = "[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)";
+        let link = "https://www.gnu.org/licenses/gpl-3.0";
+        return [badge, link];
     }
     else if(license === "Apache"){
-        return "[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)";
+        let badge = "[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)";
+        let link = "https://opensource.org/licenses/Apache-2.0";
+        return [badge, link];
     }
     else if(license === "MPL 2.0"){
-        return "[![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)";
+        let badge = "[![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)";
+        let link = "https://opensource.org/licenses/MPL-2.0";
+        return [badge, link];
     }
     else if(license === "Unlicense"){
-        return "[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)";
-    }else if(license === "Other"){
-        return "";
+        let badge = "[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)";
+        let link = "http://unlicense.org/";
+        return [badge, link];
     }
 }
+
+const templateLicense = gatherLicense(response.licenseInput);
 
 // Template for generated README.me including the answers from Prompts
 let readmeTemplate =`
 # ${response.titleInput}
 
-${gatherLicense(response.licenseInput)}
+${templateLicense[0]}
 ## Description
 ${response.descriptionInput}
 
@@ -100,7 +112,9 @@ ${response.installationInput}
 ${response.usageInput}
 
 ## License
+Distributed under the ${response.licenseInput} License.
 
+Please see ${templateLicense[1]} to find out more.
 
 ## Contributing
 ${response.contributionInput}
