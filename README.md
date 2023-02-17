@@ -1,8 +1,8 @@
 
-# test
+# Test
 
 ## Description
-hi this is a test
+hi again another test
 
 ## Table of Content
 
@@ -29,3 +29,6 @@ hi this is a test
 
 
 ## Questions
+If you have any questions, Please contact me through:
+* [GitHub](https://github.com/AinsAl)
+* [email](mailto:alex.ainslie99@gmail.com)

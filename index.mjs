@@ -76,6 +76,9 @@ ${response.descriptionInput}
 
 
 ## Questions
+If you have any questions, Please contact me through:
+* [GitHub](https://github.com/${response.githubInput})
+* [Email](mailto:${response.emailInput})
 `;
 
 await fs.writeFile("README.md",readmeTemplate);
