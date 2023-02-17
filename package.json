@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/AlexAins/README-Generator/issues"
   },
-  "homepage": "https://github.com/AlexAins/README-Generator#readme"
+  "homepage": "https://github.com/AlexAins/README-Generator#readme",
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "inquirer": "^9.1.4"
+  }
 }
