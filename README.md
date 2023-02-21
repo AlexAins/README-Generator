@@ -1,6 +1,6 @@
 # README-Generator
 
-![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![NPM](https://img.shields.io/badge/NPM-%23CB3837.svg?style=for-the-badge&logo=npm&logoColor=white) ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white) ![NPM](https://img.shields.io/badge/NPM-%23CB3837.svg?style=for-the-badge&logo=npm&logoColor=white) 
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
@@ -10,7 +10,15 @@ This is done by asking the project creator questions to allow the generator to g
 
 This project is developed using Node.JS and NPM with the use of Inquirer and FS packages.
 
-## Instillation
+## Table of Content
+* [Installation](#installation)
+* [Usage](#usage)
+* [Examples](#examples)
+* [Technologies Used](#technologies-used)
+* [License](#license)
+* [Questions](#questions)
+
+## Installation
 To install, firstly clone the repository down to your local machine.
 
 Then run 
@@ -24,7 +32,6 @@ Run the code from your console using
 ```
 node index.mjs
 ```
-
 this will start the process to generate your README.
 
 ## Examples
