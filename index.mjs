@@ -126,6 +126,8 @@ ${response.testInput}
 If you have any questions, Please contact me through:
 * GitHub: [${response.githubInput}](https://github.com/${response.githubInput})
 * Email: [${response.emailInput}](mailto:${response.emailInput})
+
+This README was generated using a [README Generator](https://github.com/AlexAins/README-Generator)
 `;
 
 // Creating new README.me file using FS.
