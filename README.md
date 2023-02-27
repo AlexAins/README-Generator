@@ -40,6 +40,7 @@ this will start the process to generate your README.
 ![alt text](./assets/readme.gif)
 
 The [walk-through video](./assets/walkthrough.mp4) provides a good example of how to use this README generator.
+
 Here is a link to video in google drive. https://drive.google.com/file/d/1fom_uFk_LdrqUIOqPpFRoOVfqulOd-Bj/view?usp=sharing 
 
 ### Sample README
